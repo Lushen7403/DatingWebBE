@@ -10,7 +10,6 @@ using MatchLoveWeb.SignaIR;
 using CloudinaryDotNet;
 using Microsoft.AspNetCore.SignalR;
 using static MatchLoveWeb.Controllers.PaymentController;
-using Microsoft.ML.OnnxRuntime;
 
 var builder = WebApplication.CreateBuilder(args);
 
