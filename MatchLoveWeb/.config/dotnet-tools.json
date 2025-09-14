@@ -1,6 +1,5 @@
 {
   "version": 1,
-<<<<<<< HEAD
   "isRoot": true,
   "tools": {
     "dotnet-ef": {
