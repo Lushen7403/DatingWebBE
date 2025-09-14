@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "oaHAEcCdtO4vTBcigbzLNbNcja4lxnZbkF+dvM0pL90=",
+  "Source": "MatchLoveWeb",
+  "BasePath": "_content/MatchLoveWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MatchLoveWeb\\wwwroot",
+      "Source": "MatchLoveWeb",
+      "ContentRoot": "D:\\C#\\MatchLoveWeb\\MatchLoveWeb\\wwwroot\\",
+      "BasePath": "_content/MatchLoveWeb",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

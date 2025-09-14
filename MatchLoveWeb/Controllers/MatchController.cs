@@ -154,7 +154,7 @@ namespace MatchLoveWeb.Controllers
                             var notifA = new Notification
                             {
                                 UserId = dto.AccountId,
-                                NotificationTypeId = 2, // ví dụ 2 = “match”
+                                NotificationTypeId = 3, // ví dụ 2 = “match”
                                 Content = $"Bạn đã match với {account.UserName}!",
                                 IsRead = false,
                                 CreatedAt = now,

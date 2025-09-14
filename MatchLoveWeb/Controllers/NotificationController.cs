@@ -25,7 +25,7 @@ namespace MatchLoveWeb.Controllers
                 var notifications = await _context.Notifications
                     .Where(n =>
                         n.UserId == accountId
-                        || (n.NotificationTypeId == 2 && n.ReferenceId == null)
+                        || (n.NotificationTypeId == 2 && n.ReferenceId == null && n.UserId == 16 )
                     )
                     .OrderByDescending(n => n.CreatedAt) // Sắp xếp theo thời gian tạo mới nhất
                     .ToListAsync();
@@ -68,10 +68,14 @@ namespace MatchLoveWeb.Controllers
         public async Task<ActionResult<int>> GetUnreadCount(int accountId)
         {
             var count = await _context.Notifications
-                .CountAsync(n => n.UserId == accountId && n.IsRead == false);
-
-            var count2 = await _context.Notifications.CountAsync(p => p.NotificationTypeId == 2 && p.IsRead == false && (p.ReferenceId == null || p.UserId == accountId));
-            return Ok(count + count2);
+            .CountAsync(n =>
+                n.IsRead == false &&
+                (
+                    n.UserId == accountId
+                    || (n.NotificationTypeId == 2 && n.ReferenceId == null && n.UserId == 16)
+                )
+            );
+            return Ok(count);
         }
     }
 }

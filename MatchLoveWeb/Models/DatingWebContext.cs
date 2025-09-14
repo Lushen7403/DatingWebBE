@@ -60,7 +60,7 @@ public partial class DatingWebContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("workstation id=DatingWeb.mssql.somee.com;packet size=4096;user id=lushen_SQLLogin_1;pwd=ghueci1zxf;data source=DatingWeb.mssql.somee.com;persist security info=False;initial catalog=DatingWeb;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Data Source=SMILEY\\SQLEXPRESS;Initial Catalog=DatingWeb;Integrated Security=True;TrustServerCertificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
