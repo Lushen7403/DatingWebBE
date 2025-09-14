@@ -1,6 +1,10 @@
 {
   "version": 1,
+<<<<<<< HEAD
   "isRoot": false,
+=======
+  "isRoot": truee,
+>>>>>>> 325f4fc2f95c2a921589e6ba5c7c10529ae8ded7
   "tools": {
     "dotnet-ef": {
       "version": "9.0.6",
